@@ -1,0 +1,176 @@
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    color: #1d4ed8;
+}
+
+.subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+.input-section,
+.result,
+.section {
+    background-color: white;
+    padding: 22px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 12px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+button:focus-visible,
+input:focus-visible {
+    outline: 2px solid #60a5fa;
+    outline-offset: 2px;
+}
+
+#error {
+    color: #dc2626;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.result {
+    text-align: center;
+    background-color: #dbeafe;
+}
+
+.result h2 {
+    font-size: 18px;
+}
+
+.result p {
+    color: #1d4ed8;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#tank {
+    width: 100%;
+    overflow-x: auto;
+}
+
+#tank svg {
+    display: block;
+    margin: auto;
+}
+
+.legend {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.legend span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.legend i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+}
+
+.block-color {
+    background-color: #475569;
+}
+
+.water-color {
+    background-color: #38bdf8;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #eff6ff;
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+    color: #64748b;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .input-section,
+    .result,
+    .section {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

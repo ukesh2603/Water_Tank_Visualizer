@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Tank Problem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Water Tank Problem</h1>
+        <p class="subtitle">
+            Calculate how much water can be stored between the blocks.
+        </p>
+
+        <div class="input-section">
+            <label for="heights">Enter block heights</label>
+
+            <input
+                type="text"
+                id="heights"
+                value="0,4,0,0,0,6,0,6,4,0"
+                placeholder="Example: 0,4,0,0,0,6"
+            >
+
+            <button id="calculateBtn">Calculate Water</button>
+
+            <p id="error" role="alert"></p>
+        </div>
+
+        <div class="result">
+            <h2>Total Water Stored</h2>
+            <p><span id="totalWater">0</span> units</p>
+        </div>
+
+        <div class="section">
+            <h2>Tank Visualization</h2>
+
+            <div id="tank"></div>
+
+            <div class="legend">
+                <span><i class="block-color"></i> Blocks</span>
+                <span><i class="water-color"></i> Water</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Water Details</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Index</th>
+                            <th>Block Height</th>
+                            <th>Water Stored</th>
+                        </tr>
+                    </thead>
+                    <tbody id="waterDetails"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <footer>
+            Built using HTML, CSS, JavaScript and SVG.
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
